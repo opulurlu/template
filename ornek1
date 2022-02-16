@@ -1,0 +1,32 @@
+class Menkul():
+        hisseAdi = 'EREGL'
+        def __init__(self, isl_fiy,adet,portf_deg,k_fiy,hacim,kom,b_kar):
+            self.isl_fiy=isl_fiy   
+            self.adet = adet
+            self.portf_deg = portf_deg
+            self.k_fiy = k_fiy
+            self.hacim = hacim 
+            self.kom = kom
+            self.b_kar = b_kar
+            
+        def __repr__(self):
+            return "{} eregli verilerini görebilirsin".format(self.isl_fiy)
+        def kar(self):
+           
+            return "Bugün {} tl den aldıgım {}adet hisse{}tl degerine ulasmistir {}tl lik kapanis fiyatiyla satarak gunun sonuda {} tl hacim uzerinden odediğim {} tl komisyonu dustugumde kalan net kar {} tl oldu.".format(
+            self.isl_fiy,
+            self.adet,
+            self.portf_deg,
+            self.k_fiy,    
+            self.hacim,
+            self.kom,
+            self.b_kar,
+            ) 
+        def zarar(self):
+            eregli2=Menkul(26,1000,1,1,52240,28.00,351,1880,12,14,1530)
+            return "Bugün  {} ten alınan {} adetlik hissesi yapilan islem sonucunda portfoy {} olmustur. Kapanıs fiyatı {} olan hisse {} fiyattan satılmıs {} hacime ulaşarak {} kom gideri ve {} zararla sonuclanmistir."
+        
+        def alis_isl(self):
+            eregli=Menkul(30.65,125,4018,32.15,8036,5.63,181.87,1,1,1) 
+            return"Bugün {} alıs  fiyatı üzerinden {} adetlik alım islemi sonucunda portfoy {} değere ulasmıstır.{} kapanıs fiyatı bulunan hissede satıs olmamıstır."
+        
